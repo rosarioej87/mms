@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    {{$page->title}}
+    {{$page->content}}
     @foreach (\App\Models\MenuItem::getTree(); as $item)
   <a class="no-underline hover:underline p-3"
      href="{{$item->url()}}">
